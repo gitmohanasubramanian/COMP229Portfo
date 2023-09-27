@@ -1,0 +1,77 @@
+<!--Filename: contact.ejs
+    Students name: Mohana Subramanian
+    StudentID: 301319170
+    Date: 09/27/2023 -->
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:darkslategrey;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:darkgrey;
+}
+
+.container {
+  border-radius: 5px;
+  background-color:darkgrey;
+  padding: 10px;
+}
+h4{
+  padding-left: 30px;
+}
+</style>
+</head>
+<body>
+<br>
+<h4>Contact Form</h4>
+
+<div class="container">
+  <form action="/home">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter your first name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
+
+    <label for="cnumber">Contact Number</label>
+    <input type="text" id="cnumber" name="contactnumber" placeholder="Enter contact number..">
+  
+    <label for="emaidadd">Email Address</label>
+    <input type="text" id="emaidadd" name="emailaddress" placeholder="Enter email address..">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
